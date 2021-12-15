@@ -70,7 +70,7 @@
                         <rule>
                             <limits>
                                 <limit>
-                                    <counter>INSTRUCTION</counter>
+                                    <counter>COMPLEXITY</counter>
                                     <value>COVEREDRATIO</value>
                                     <minimum>100%</minimum>
                                 </limit>
