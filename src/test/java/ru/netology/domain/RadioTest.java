@@ -127,6 +127,12 @@ class RadioTest {
         radio.setCurrentVolume(-1);
         assertEquals(0, radio.getCurrentVolume());
     }
+
+    @Test
+    public void shouldUseConstructor () {
+        Radio radio = new Radio();
+
+    }
 }
 
 

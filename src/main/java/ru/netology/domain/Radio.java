@@ -4,6 +4,17 @@ public class Radio {
 
     private int currentRadioStation;
     private int currentVolume;
+    private int numberOfRadioStations = 9;
+    private int selectedRadioStations = 3;
+
+    public Radio() {
+    }
+
+    public Radio(int currentRadioStation, int numberOfRadioStations, int selectedRadioStations) {
+        this.currentRadioStation = currentRadioStation;
+        this.numberOfRadioStations = numberOfRadioStations;
+        this.selectedRadioStations = selectedRadioStations;
+    }
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
@@ -62,6 +73,7 @@ public class Radio {
         }
         currentRadioStation--;
     }
+
 }
 
 
