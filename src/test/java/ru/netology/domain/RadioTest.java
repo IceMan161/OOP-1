@@ -9,8 +9,8 @@ class RadioTest {
     @Test
     public void currentRadioStations() {
         Radio radio = new Radio();
-        radio.setCurrentRadioStation(7);
-        assertEquals(7, radio.getCurrentRadioStation());
+        radio.setCurrentRadioStation(10);
+        assertEquals(0, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -32,7 +32,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(9);
         radio.nextStation();
-        assertEquals(0,radio.getCurrentRadioStation());
+        assertEquals(0, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -40,7 +40,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(7);
         radio.nextStation();
-        assertEquals(8,radio.getCurrentRadioStation());
+        assertEquals(8, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -48,7 +48,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(11);
         radio.nextStation();
-        assertEquals(1,radio.getCurrentRadioStation());
+        assertEquals(1, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -56,7 +56,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(0);
         radio.prevStation();
-        assertEquals(9,radio.getCurrentRadioStation());
+        assertEquals(9, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -64,7 +64,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(1);
         radio.prevStation();
-        assertEquals(0,radio.getCurrentRadioStation());
+        assertEquals(0, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -72,7 +72,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(11);
         radio.prevStation();
-        assertEquals(9,radio.getCurrentRadioStation());
+        assertEquals(9, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -80,7 +80,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentVolume(10);
         radio.increaseVolume();
-        assertEquals(10, radio.getCurrentVolume());
+        assertEquals(11, radio.getCurrentVolume());
     }
 
     @Test
@@ -88,7 +88,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentVolume(11);
         radio.increaseVolume();
-        assertEquals(1, radio.getCurrentVolume());
+        assertEquals(12, radio.getCurrentVolume());
     }
 
     @Test
@@ -118,7 +118,7 @@ class RadioTest {
     public void shouldCurrentVolume2() {
         Radio radio = new Radio();
         radio.setCurrentVolume(11);
-        assertEquals(0, radio.getCurrentVolume());
+        assertEquals(11, radio.getCurrentVolume());
     }
 
     @Test
@@ -128,11 +128,6 @@ class RadioTest {
         assertEquals(0, radio.getCurrentVolume());
     }
 
-    @Test
-    public void shouldUseConstructor () {
-        Radio radio = new Radio();
-
-    }
 }
 
 
