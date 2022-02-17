@@ -137,7 +137,7 @@ class RadioTest {
     @Test
     public void shouldUseConstructor2 () {
         Radio radio = new Radio();
-        assertEquals(9,radio.getNumberRS());
+        assertEquals(20,radio.getNumberRS());
     }
 
 }
