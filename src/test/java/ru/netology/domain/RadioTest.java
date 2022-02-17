@@ -9,7 +9,7 @@ class RadioTest {
     @Test
     public void currentRadioStations() {
         Radio radio = new Radio();
-        radio.setCurrentRadioStation(10);
+        radio.setCurrentRadioStation(11);
         assertEquals(0, radio.getCurrentRadioStation());
     }
 
@@ -17,7 +17,7 @@ class RadioTest {
     public void currentRadioStations2() {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(10);
-        assertEquals(0, radio.getCurrentRadioStation());
+        assertEquals(10, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -30,7 +30,7 @@ class RadioTest {
     @Test
     public void shouldNextRadioStation() {
         Radio radio = new Radio();
-        radio.setCurrentRadioStation(9);
+        radio.setCurrentRadioStation(10);
         radio.nextStation();
         assertEquals(0, radio.getCurrentRadioStation());
     }
@@ -56,7 +56,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(0);
         radio.prevStation();
-        assertEquals(9, radio.getCurrentRadioStation());
+        assertEquals(10, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -72,7 +72,7 @@ class RadioTest {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(11);
         radio.prevStation();
-        assertEquals(9, radio.getCurrentRadioStation());
+        assertEquals(10, radio.getCurrentRadioStation());
     }
 
     @Test
@@ -137,7 +137,7 @@ class RadioTest {
     @Test
     public void shouldUseConstructor2 () {
         Radio radio = new Radio();
-        assertEquals(20,radio.getNumberRS());
+        assertEquals(10,radio.getNumberRS());
     }
 
 }
