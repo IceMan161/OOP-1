@@ -140,6 +140,12 @@ class RadioTest {
         assertEquals(10,radio.getNumberRS());
     }
 
+    @Test
+    public void shouldSetUpRS () {
+        Radio radio = new Radio(20);
+        radio.setCurrentRadioStation(15);
+        assertEquals(15,radio.getCurrentRadioStation());
+    }
 }
 
 

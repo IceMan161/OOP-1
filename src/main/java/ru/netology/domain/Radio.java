@@ -15,6 +15,7 @@ public class Radio {
 
     public Radio(int setNumberRS) {
         this.numberRS = setNumberRS;
+        this.maxRadiostation = setNumberRS - 1;
     }
 
     public int getNumberRS() {
@@ -34,7 +35,6 @@ public class Radio {
         }
         this.currentRadioStation = currentRadioStation;
     }
-
 
     public int getCurrentVolume() {
         return currentVolume;
